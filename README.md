@@ -20,4 +20,4 @@ build:
 ## Build
 
 -   `npm run build` will generate `lib/main.js`
--   `npm run package` will then package the js files along with its modules and dependencies in `dist/index.js`
+-   `npm run package` will then package the `lib/main.js` file along with its modules and dependencies in `dist/index.js`
