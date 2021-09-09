@@ -3,7 +3,7 @@ description: "Restore file's modified time (timestamp) based on git commits"
 author: "Harsh"
 branding:
     icon: "clock"
-    color: "orange"
+    color: "purple"
 runs:
     using: "node12"
     main: "dist/index.js"
