@@ -19,4 +19,5 @@ build:
 
 ## Build
 
-Run `ncc build` to generate index.js in the `dist` folder. More info on customization [here](https://github.com/actions/typescript-action) 
+-   `npm run build` will generate `lib/main.js`
+-   `npm run package` will then package the js files along with its modules and dependencies in `dist/index.js`
