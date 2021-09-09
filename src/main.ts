@@ -3,10 +3,14 @@ import * as exec from "@actions/exec";
 import * as path from "path";
 
 async function run() {
-	// core.startGroup("Running mtime restore script");
-	const script = path.normalize(path.join(__dirname, "..", "src", "git-restore-mtime"));
-	await exec.exec("python", [script]);
-	// core.endGroup();
+	try {
+		core.startGroup("Running mtime restore script");
+		const script = path.normalize(path.join(__dirname, "..", "src", "git-restore-mtime"));
+		await exec.exec("python", [script]);
+		core.endGroup();
+	} catch (e) {
+		core.setFailed(e.message);
+	}
 }
 
 run();
