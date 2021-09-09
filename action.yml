@@ -1,9 +1,9 @@
-name: 'git-restore-mtime'
+name: "git-restore-mtime-action"
 description: "Restore file's modified time (timestamp) based on git commits"
-author: 'Pixelcop Research, Inc.'
+author: "Harsh"
 branding:
-  icon: 'clock'
-  color: 'orange'
+    icon: "clock"
+    color: "orange"
 runs:
-  using: 'node12'
-  main: 'lib/main.js'
+    using: "node12"
+    main: "lib/main.js"
