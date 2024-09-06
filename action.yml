@@ -1,9 +1,9 @@
 name: "git-restore-mtime-action"
 description: "Restore file's modified time (timestamp) based on git commits"
-author: "Harsh"
+author: "Harsh Mandan"
 branding:
     icon: "clock"
     color: "purple"
 runs:
-    using: "node16"
+    using: "node20"
     main: "dist/index.js"
